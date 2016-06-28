@@ -1,0 +1,1 @@
+# artillery-plugin-aws-sigv4
