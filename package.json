@@ -4,7 +4,10 @@
   "description": "A plugin for artillery.io that add an authentication header to every request that conforms to V4 of the AWS Signature Specification.  See https://github.com/shoreditch-ops/artillery.  Also see http://docs.aws.amazon.com/general/latest/gr/sigv4_signing.html.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"TESTS TBD\" && exit 0",
+    "jscs": "jscs . lib",
+    "jshint": "jshint .",
+    "validate": "npm ls"
   },
   "repository": {
     "type": "git",
@@ -27,6 +30,15 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^2.5.3"
-  }
+    "jscs": "^3.0.5",
+    "jshint": "^2.9.2",
+    "mocha": "^2.5.3",
+    "precommit-hook": "^3.0.0"
+  },
+  "pre-commit": [
+    "jscs",
+    "jshint",
+    "validate",
+    "test"
+  ]
 }
