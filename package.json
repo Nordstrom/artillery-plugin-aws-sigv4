@@ -27,6 +27,12 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "git-guppy": "^1.2.1",
+    "gulp": "^3.9.1",
+    "gulp-jscs": "^4.0.0",
+    "gulp-jshint": "^2.0.1",
+    "guppy-pre-commit": "^0.3.0",
+    "jshint": "^2.9.2",
     "mocha": "^2.5.3"
   }
 }
