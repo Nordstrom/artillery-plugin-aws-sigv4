@@ -62,7 +62,6 @@
     "requireCapitalizedConstructors": true,
     "requireCommaBeforeLineBreak": true,
     "requireLineFeedAtFileEnd": true,
-    "requireMultipleVarDecl": "onevar",
     "requireParenthesesAroundIIFE": true,
     "requireSpaceAfterBinaryOperators": true,
     "requireSpaceAfterLineComment": true,

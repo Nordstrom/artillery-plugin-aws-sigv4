@@ -16,5 +16,6 @@
         "define": true,
         "describe": true,
         "it": true
-    }
+    },
+    "esversion": 6
 }
