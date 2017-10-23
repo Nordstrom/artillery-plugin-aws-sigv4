@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run jscs && npm run jshint",
-    "jscs": "jscs . lib",
-    "jshint": "jshint ."
+    "jscs": "./node_modules/.bin/jscs . lib",
+    "jshint": "./node_modules/.bin/jshint .",
+    "publish": "./node_modules/.bin/np"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
   },
   "devDependencies": {
     "jscs": "^3.0.5",
-    "jshint": "^2.9.2"
+    "jshint": "^2.9.2",
+    "np": "^2.16.0"
   }
 }
