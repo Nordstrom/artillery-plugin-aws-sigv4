@@ -7,7 +7,9 @@
     "test": "npm run jscs && npm run jshint",
     "jscs": "./node_modules/.bin/jscs . lib",
     "jshint": "./node_modules/.bin/jshint .",
-    "publish": "./node_modules/.bin/np"
+    "publish": "./node_modules/.bin/np",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -26,11 +28,13 @@
   },
   "homepage": "https://github.com/nordstrom/artillery-plugin-aws-sigv4#readme",
   "dependencies": {
-    "aws-sdk": "^2.3.19"
+    "aws-sdk": "^2.3.19",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "jscs": "^3.0.5",
     "jshint": "^2.9.2",
     "np": "^2.16.0"
-  }
+  },
+  "snyk": true
 }
