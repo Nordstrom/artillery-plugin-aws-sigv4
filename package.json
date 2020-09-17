@@ -1,6 +1,6 @@
 {
   "name": "artillery-plugin-aws-sigv4",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A plugin for artillery.io that add an authentication header to every request that conforms to V4 of the AWS Signature Specification.  See https://github.com/shoreditch-ops/artillery.  Also see http://docs.aws.amazon.com/general/latest/gr/sigv4_signing.html.",
   "main": "index.js",
   "scripts": {
