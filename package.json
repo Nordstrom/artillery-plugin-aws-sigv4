@@ -4,9 +4,10 @@
   "description": "A plugin for artillery.io that add an authentication header to every request that conforms to V4 of the AWS Signature Specification.  See https://github.com/shoreditch-ops/artillery.  Also see http://docs.aws.amazon.com/general/latest/gr/sigv4_signing.html.",
   "main": "index.js",
   "scripts": {
-    "test": "npm run jscs && npm run jshint",
-    "jscs": "./node_modules/.bin/jscs . lib",
-    "jshint": "./node_modules/.bin/jshint .",
+    "test": "npm run lint && npm run jshint",
+    "lint": "./node_modules/.bin/standard",
+    "lint-fix": "./node_modules/.bin/standard --fix",
+    "jshint": "./node_modules/.bin/jshint --exclude node_modules --exclude test .",
     "publish": "./node_modules/.bin/np"
   },
   "repository": {
@@ -25,12 +26,21 @@
     "url": "https://github.com/nordstrom/artillery-plugin-aws-sigv4/issues"
   },
   "homepage": "https://github.com/nordstrom/artillery-plugin-aws-sigv4#readme",
-  "dependencies": {
-    "aws-sdk": "^2.3.19"
+  "peerDependencies": {
+    "aws-sdk": "^2.750.0"
   },
   "devDependencies": {
-    "jscs": "^3.0.5",
-    "jshint": "^2.9.2",
-    "np": "^2.16.0"
+    "eslint": "^6.8.0",
+    "jshint": "^2.11.1",
+    "np": "^6.2.3",
+    "standard": "^14.3.4"
+  },
+  "jshintConfig": {
+    "esversion": 6,
+    "node": true,
+    "asi": true
+  },
+  "dependencies": {
+    "aws-sdk": "^2.751.0"
   }
 }
